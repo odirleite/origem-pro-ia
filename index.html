@@ -1,0 +1,230 @@
+<!-- FILE: index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origem Pro I.A - O Futuro da Inteligência Artificial</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Roboto+Mono:wght@400;500&family=Orbitron:wght@800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon (Exemplo de SVG inline) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop stop-color='%2300FFFF'/%3E%3Cstop offset='1' stop-color='%239D00FF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23g)' d='M50,5 A45,45 0 1,1 5,50 A45,45 0 0,1 50,5 M50,15 A35,35 0 1,0 85,50 A35,35 0 0,0 50,15 M50,30 A20,20 0 1,1 30,50 A20,20 0 0,1 50,30 Z'/%3E%3C/svg%3E">
+</head>
+<body>
+
+    <!-- Efeito de partículas no fundo -->
+    <div id="particles-js"></div>
+
+    <!-- Cabeçalho -->
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">Origem Pro <span>I.A</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#posts">Artigos</a></li>
+                    <li><a href="#posts">Ferramentas</a></li>
+                    <li><a href="#posts">Medicina</a></li>
+                    <li><a href="#posts">Automação</a></li>
+                    <li><a href="#posts">Notícias</a></li>
+                </ul>
+            </nav>
+            <div class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Hero (Carrossel) -->
+        <section id="hero">
+            <!-- NOTA: Este é um slide estático para representar o design. Um carrossel funcional requer JS mais complexo. -->
+            <div class="hero-slide active">
+                <div class="hero-content">
+                    <h1 class="glitch" data-text="OpenAI lança GPT-5 com capacidades multimodais avançadas">OpenAI lança GPT-5 com capacidades multimodais avançadas</h1>
+                    <p>O novo modelo integra texto, imagem, vídeo e som com uma precisão impressionante, redefinindo os limites da interação homem-máquina.</p>
+                    <a href="#" class="btn-neon">Leia Mais</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contadores -->
+        <section id="stats">
+            <div class="container">
+                <div class="stat-item">
+                    <h3>+<span class="counter" data-target="1280">0</span></h3>
+                    <p>Artigos Publicados</p>
+                </div>
+                <div class="stat-item">
+                    <h3>+<span class="counter" data-target="350">0</span></h3>
+                    <p>Ferramentas Analisadas</p>
+                </div>
+                <div class="stat-item">
+                    <h3>+<span class="counter" data-target="1500000">0</span></h3>
+                    <p>Visitantes do Blog</p>
+                </div>
+                <div class="stat-item">
+                    <h3>+<span class="counter" data-target="5">0</span></h3>
+                    <p>Categorias</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Posts -->
+        <section id="posts">
+            <div class="container">
+                <h2>Últimas Publicações</h2>
+                <div id="filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="novidades">Novidades</button>
+                    <button class="filter-btn" data-filter="medicina">Medicina</button>
+                    <button class="filter-btn" data-filter="automacao">Automação</button>
+                    <button class="filter-btn" data-filter="geral">Geral</button>
+                </div>
+
+                <div class="post-grid">
+                    <!-- Notícia 1 -->
+                    <div class="post-card" data-category="novidades">
+                        <img src="https://picsum.photos/seed/gpt5/400/250" alt="IA Multimodal">
+                        <div class="card-content">
+                            <h4>OpenAI lança GPT-5 com capacidades multimodais avançadas</h4>
+                            <p>O novo modelo integra texto, imagem, vídeo e som com precisão impressionante.</p>
+                        </div>
+                    </div>
+                    <!-- Notícia 2 -->
+                    <div class="post-card" data-category="medicina">
+                        <img src="https://picsum.photos/seed/cancer/400/250" alt="IA e Diagnóstico">
+                        <div class="card-content">
+                            <h4>IA revoluciona diagnósticos precoces de câncer com 98% de acerto</h4>
+                            <p>Sistemas treinados em radiologia já superam médicos em detecção precoce.</p>
+                        </div>
+                    </div>
+                    <!-- Notícia 3 -->
+                    <div class="post-card" data-category="novidades">
+                        <img src="https://picsum.photos/seed/deepmind/400/250" alt="Google DeepMind">
+                        <div class="card-content">
+                            <h4>Google DeepMind desenvolve IA que aprende com zero exemplos</h4>
+                            <p>Nova arquitetura usa aprendizado autônomo para resolver tarefas complexas.</p>
+                        </div>
+                    </div>
+                    <!-- Notícia 4 -->
+                    <div class="post-card" data-category="automacao">
+                        <img src="https://picsum.photos/seed/rh/400/250" alt="IA no RH">
+                        <div class="card-content">
+                            <h4>Ferramenta brasileira de IA automatiza 90% das tarefas de RH</h4>
+                            <p>Startup nacional inova com assistente virtual para recrutamento e gestão.</p>
+                        </div>
+                    </div>
+                    <!-- Notícia 5 -->
+                    <div class="post-card" data-category="medicina">
+                        <img src="https://picsum.photos/seed/epidemia/400/250" alt="Previsão de Epidemias">
+                        <div class="card-content">
+                            <h4>Cientistas criam IA capaz de prever epidemias com semanas de antecedência</h4>
+                            <p>Sistema prevê surtos cruzando dados de clima, mobilidade e redes sociais.</p>
+                        </div>
+                    </div>
+                    <!-- Notícia 6 -->
+                    <div class="post-card" data-category="medicina">
+                        <img src="https://picsum.photos/seed/3d/400/250" alt="IA Generativa 3D">
+                        <div class="card-content">
+                            <h4>IA generativa transforma radiografias em imagens 3D realistas</h4>
+                            <p>Médicos podem ver órgãos em perspectiva para melhorar diagnósticos.</p>
+                        </div>
+                    </div>
+                    <!-- Notícia 7 -->
+                    <div class="post-card" data-category="automacao">
+                        <img src="https://picsum.photos/seed/copilot/400/250" alt="Microsoft Copilot">
+                        <div class="card-content">
+                            <h4>Microsoft Copilot será integrado em 100% dos produtos Office até 2026</h4>
+                            <p>A inteligência artificial se tornará o padrão em Word, Excel, Teams e Outlook.</p>
+                        </div>
+                    </div>
+                    <!-- Notícia 8 -->
+                    <div class="post-card" data-category="automacao">
+                        <img src="https://picsum.photos/seed/agro/400/250" alt="IA na Agricultura">
+                        <div class="card-content">
+                            <h4>Nova IA para agricultura detecta pragas antes dos primeiros sinais visíveis</h4>
+                            <p>Sensores conectados à IA antecipam problemas e reduzem uso de pesticidas.</p>
+                        </div>
+                    </div>
+                    <!-- Notícia 9 -->
+                    <div class="post-card" data-category="automacao">
+                        <img src="https://picsum.photos/seed/auto/400/250" alt="IA na Indústria Automotiva">
+                        <div class="card-content">
+                            <h4>IA na indústria automotiva acelera design de veículos em 70%</h4>
+                            <p>Montadoras já usam IA para prototipagem, simulação e testes de colisão.</p>
+                        </div>
+                    </div>
+                    <!-- Notícia 10 -->
+                    <div class="post-card" data-category="geral">
+                        <img src="https://picsum.photos/seed/creative/400/250" alt="IAs Criativas">
+                        <div class="card-content">
+                            <h4>Coleção de IAs criativas: 10 ferramentas que geram música, arte e vídeo</h4>
+                            <p>Um guia com as IAs mais inovadoras para criadores digitais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <!-- Rodapé -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-col">
+            <a href="index.html" class="logo">Origem Pro <span>I.A</span></a>
+            <p>Explorando as fronteiras da Inteligência Artificial. Notícias, ferramentas e análises para o futuro da tecnologia.</p>
+            <div class="social-icons">
+                <!-- SVGs inline para ícones -->
+            </div>
+        </div>
+        <div class="footer-col">
+            <!-- Seção "Navegue" do Rodapé ATUALIZADA -->
+            <h4>Navegue</h4>
+            <ul>
+                <li><a href="index.html#posts">Artigos</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+                <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>Receba as últimas novidades diretamente no seu e-mail.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Seu melhor e-mail">
+                <button type="submit">Inscrever</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Origem Pro I.A - Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+    <!-- Scripts -->
+    <!-- Biblioteca Particles.js para o efeito de fundo -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Banner de Consentimento de Cookies -->
+<div id="cookie-banner" hidden>
+    <div class="container cookie-container">
+        <p class="cookie-text">
+            Nosso site utiliza cookies para melhorar sua experiência e para fins de análise e publicidade. Ao continuar, você concorda com nossa 
+            <a href="politica-de-privacidade.html">Política de Privacidade</a>.
+        </p>
+        <div class="cookie-buttons">
+            <button id="cookie-accept" class="btn-neon">Aceitar</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
